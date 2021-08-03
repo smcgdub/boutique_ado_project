@@ -53,9 +53,9 @@
         </div>
         <!-- Search Bar -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-          <form action="" method="GET">
+          <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-              <input class="form-control btn btn-black border border-black rounded-0 bg-white" type="text" name="q" placeholder="Search our site">
+              <input class="form-control btn btn-black border border-black rounded-0 bg-white" type="text" name="q" placeholder="Search our site" style="color: black;">
               <div class="input-group-append">
                 <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                   <span class="icon">
