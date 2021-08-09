@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Product, Category
 
 
@@ -9,7 +10,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = None
+    categories = None 
     sort = None
     direction = None
 
